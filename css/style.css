@@ -1,0 +1,106 @@
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #34BE82;
+}
+
+.textBubble{
+    width:27rem;
+    height:20rem;
+    background: white;
+    border-radius: 50%;
+    border: 0.5rem solid black;
+    position:relative;
+    transition: 0.2s transform;
+    animation-name: popup;
+    animation-duration: 0.8s;
+}
+
+.textBubble:hover .textBubble__circle{
+    animation-name: typing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.textBubble::before{
+    content:"";
+    position:absolute;
+    width:5rem;
+    height:5rem;
+    background:black;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    top:99%;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.textBubble::after{
+    content:"";
+    position:absolute;
+    width:4rem;
+    height:4rem;
+    background:white;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    top:98%;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.textBubble__circle{
+    width:3rem;
+    height:3rem;
+    background:black;
+    position:absolute;
+    transform:translateY(-50%);
+    border-radius: 50%;
+    top: 50%;
+}
+
+
+.textBubble__circle--first{
+    left:23%;
+    animation-delay:0.5s;
+
+}
+
+.textBubble__circle--second{
+    left:43%;
+    animation-delay:1s;
+}
+
+.textBubble__circle--third{
+    left:63%;
+    animation-delay:1.5s;
+}
+
+@keyframes typing {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes popup {
+    from{
+        opacity:0;
+        transform: translateY(2rem);
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
