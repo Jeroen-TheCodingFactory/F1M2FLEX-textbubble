@@ -8,6 +8,14 @@ Een Textbubble nagemaakt in HTML en CSS, geheel in "Flat" / 2D-design. Wanneer j
 Bij het vak "Flex CSS-Art" leren studenten van de opleiding Software Developer op het Mediacollege (Ma) kleine kunstwerkjes maken met HTML en CSS. In week 4 (4e les) leren studenten deze Textbubble maken, in eerste instantie met een animatie die afspeelt wanneer je over de Textbubble "hovered". Voor die studenten die wat extra willen is er een animatie gerealiseerd die aan- en uitgezet kan worden door op het figure te klikken. Dit allemaal in HTML en CSS, geen JavaScript!
 
 ## Dingen die ik heb geleerd
+1. Hoe een pastel achtige kleur een "mooi" effect geeft op een 2D / Flat textbubble.
+2. Dat je een <code> border </code> en <code> clip-path </code> niet kan combineren aangezien de border ook weggesneden wordt. 
+3. Dat je 2. kan oplossen door een element onder het andere element te plaatsen. Als je dit onderste element iets groter maakt (of het element erboven iets kleiner) en de kleur van de border (in dit geval zwart) geeft je alsnog een border kan faken. 
+4. Hoe <code> appearance:none; </code> werkt.
+5. Hoe je met een een <code> input </code> en <code> label </code> bepaalde styling kan toepassen / aanzetten en kan verwijderen / uitzetten.
+6. Dat het <code> label </code> element geen <code> figure </code> als child mag hebben, dit geeft een fout in de W3C-validator. Hiervoor moet dus een andere oplossing (zoals <code> position: absolute; </code> van het label) geïmplementeerd worden. 
+7. Dat je naast appearance ook de <code> outline </code> weg moet halen om de checkbox écht te laten verdwijnen. Dit maakt het geheel allen niet accessible (toegangkelijk). Verder onderzoek moet uitblijken hoe dit accessible gemaakt dient te worden. 
+8. Samenvattend heb ik dus geleerd hoe je "click-events" kan toepassen in alleen HTML en CSS, zonder JavaScript. 
 
 
 ## Screenshots
