@@ -46,8 +46,12 @@ label:hover{
 
 /* input is needed for turning the animation on and off */
 input[type="checkbox"]{
+    -webkit-appearance: none;
     appearance: none;
     outline:none;
+    width:0;
+    height:0;
+    border:none;
 }
 
 /* the ~ selector selects siblings (same level) that may or may not directly proceed the fist selector */
@@ -63,6 +67,7 @@ input[type="checkbox"]:checked ~ .textBubble__circle{
     width:5rem;
     height:5rem;
     background:black;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
     top:99%;
     left:50%;
@@ -75,6 +80,7 @@ input[type="checkbox"]:checked ~ .textBubble__circle{
     width:4rem;
     height:4rem;
     background:white;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
     top:98%;
     left:50%;
