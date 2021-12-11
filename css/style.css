@@ -28,11 +28,21 @@ body{
     animation-duration: 0.8s;
 }
 
-.textBubble:hover .textBubble__circle{
+.textBubble:hover{
+    cursor:pointer;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+}
+
+input[type="checkbox"]:checked ~ .textBubble__circle{
     animation-name: typing;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
+
+
 
 .textBubble::before{
     content:"";
