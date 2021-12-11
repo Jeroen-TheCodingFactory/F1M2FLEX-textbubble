@@ -32,17 +32,18 @@ body{
     cursor:pointer;
 }
 
+/* input is needed for turning the animation on and off */
 input[type="checkbox"]{
     appearance: none;
+    outline:none;
 }
 
+/* the ~ selector selects siblings (same level) that may or may not directly proceed the fist selector */
 input[type="checkbox"]:checked ~ .textBubble__circle{
     animation-name: typing;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
-
-
 
 .textBubble::before{
     content:"";
