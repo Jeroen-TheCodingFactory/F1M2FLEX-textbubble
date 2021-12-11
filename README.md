@@ -36,3 +36,4 @@ https://textbubble.css-art.nl
 ## Resources
 1. W3C-validator, voor het checken van mijn code => https://validator.w3.org/
 2. Colorhunt, voor het kiezen van kleuren voor de achtergrond => https://colorhunt.co/
+3. OpenGraph, een site voor het makkelijk genereren van Open Graph Protocol (OGP) meta-tags => https://opengraph.xyz
