@@ -28,6 +28,7 @@ body{
     animation-duration: 0.8s;
 }
 
+/* label is needed for checking and unchecking the checkbox (input) */
 label{
     display:block;
     width:30rem;
